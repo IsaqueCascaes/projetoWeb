@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0F1D41;
+    color: white;
+
+}
+
+#btn-mobile {
+    border: none;
+    background-color: #0F1D41;
+}
+
+.hamburguer {
+    width: 2rem;
+    height: 2rem;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#menu li:hover {
+    background-color: #214190;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: star;
+    justify-content: center;
+    height: 96vh;
+    background: rgba(0, 0, 0, 0.6) url('/img/fundo-main.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.texto-anuncio {
+    text-align: start;
+    width: 60%;
+    padding-left: 3rem;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.texto-adicional {
+    padding-top: .2rem;
+    padding-left: 3rem;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.secao-informacoesSobre {
+    align-items: center;
+    display: flex;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 29, 65, 1) 48%, rgb(2, 54, 118) 100%);
+    height: 60vh;
+}
+
+.bloco-image-informacoes {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+}
+
+.bloco-image-informacoes img {
+    width: 26rem;
+    height: 20rem;
+    border-radius: 700px;
+    transition: .3s;
+}
+
+.bloco-image-informacoes img:hover {
+    transform: scale(1.06);
+    transition: .3s;
+}
+
+.bloco-informacoesSobre {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.bloco-titulo-informacoesSobre {
+    position: relative;
+    bottom: 5rem;
+    padding: 2rem 3rem;
+}
+
+.lista-informacoesSobre {
+    list-style: none;
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+}
+
+.lista-informacoesSobre li {
+    padding-bottom: .5rem;
+    font-weight: 500;
+}
+
+.lista-informacoesSobre a {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 4rem;
+        right: 0rem;
+        background-color: #0F1D41;
+        z-index: 1000;
+        transition: .6s;
+        overflow-y: auto;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 4rem);
+    }
+
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+    }
+}
