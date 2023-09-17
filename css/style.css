@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #0F1D41;
+    background-color: #0a132c;
     color: white;
 
 }
@@ -75,12 +75,14 @@ main {
     color: white;
 }
 
+.cor-pagina {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 29, 65, 1) 48%, rgb(2, 54, 118) 100%);
+}
+
 .secao-informacoesSobre {
     align-items: center;
     display: flex;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 29, 65, 1) 48%, rgb(2, 54, 118) 100%);
-    height: 60vh;
+    height: 100vh;
 }
 
 .bloco-image-informacoes {
@@ -92,8 +94,8 @@ main {
 }
 
 .bloco-image-informacoes img {
-    width: 26rem;
-    height: 20rem;
+    width: 35rem;
+    height: 30rem;
     border-radius: 700px;
     transition: .3s;
 }
@@ -112,8 +114,13 @@ main {
 
 .bloco-titulo-informacoesSobre {
     position: relative;
-    bottom: 5rem;
+    bottom: 10rem;
     padding: 2rem 3rem;
+}
+
+.bloco-titulo-informacoesSobre h2 {
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .lista-informacoesSobre {
@@ -124,12 +131,140 @@ main {
 }
 
 .lista-informacoesSobre li {
+    font-size: 20px;
     padding-bottom: .5rem;
     font-weight: 500;
 }
 
 .lista-informacoesSobre a {
     color: white;
+}
+
+.secao-cards-aulas {
+    height: 110vh;
+    margin-bottom: 6rem;
+}
+
+.bloco-titulo-cards-aulas {
+    position: relative;
+    bottom: 2rem;
+    padding: 2rem 3rem;
+}
+
+.bloco-titulo-cards-aulas h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.bloco-cards-aulas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards-aulas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    background: rgb(216, 211, 213);
+    background: radial-gradient(circle, rgba(216, 211, 213, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    transition: .3s;
+}
+
+.cards-aulas:hover {
+    transition: .3s;
+    transform: scale(1.06);
+}
+
+.cards-aulas p {
+    padding: 1rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.secao-exercicios {
+    height: 90vh;
+}
+
+.bloco-titulo-exercicios {
+    position: relative;
+    bottom: 2rem;
+    padding: 2rem 3rem;
+}
+
+.bloco-titulo-exercicios h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.bloco-exercicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-exercicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    background: rgb(216, 211, 213);
+    background: radial-gradient(circle, rgba(216, 211, 213, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    transition: .3s;
+}
+
+.cards-exercicios:hover {
+    transition: .3s;
+    transform: scale(1.06);
+}
+
+.cards-exercicios p {
+    padding: 1rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.secao-footer {
+    height: 30vh;
+    background-color: #0a132c;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.bloco-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.consideracoes-finais {
+    padding-top: 1rem;
+    font-size: 10px;
+}
+
+footer a {
+    color: #fff;
 }
 
 @media (max-width: 600px) {
