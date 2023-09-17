@@ -10,6 +10,12 @@
     color: white;
 }
 
+#logo {
+    width: 60px;
+    height: 55px;
+    border-radius: 400px;
+}
+
 #header {
     box-sizing: border-box;
     height: 4rem;
@@ -212,31 +218,6 @@ main {
     justify-content: space-around;
 }
 
-.cards-exercicios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30rem;
-    height: 20rem;
-    margin-bottom: 1rem;
-    border-radius: 20px;
-    background: rgb(216, 211, 213);
-    background: radial-gradient(circle, rgba(216, 211, 213, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    transition: .3s;
-}
-
-.cards-exercicios:hover {
-    transition: .3s;
-    transform: scale(1.06);
-}
-
-.cards-exercicios p {
-    padding: 1rem;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 600;
-}
-
 .secao-footer {
     height: 30vh;
     background-color: #0a132c;
@@ -267,7 +248,105 @@ footer a {
     color: #fff;
 }
 
-@media (max-width: 600px) {
+
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .bloco-image-informacoes img {
+        width: 30rem;
+        height: 20rem;
+    }
+}
+
+@media (min-width:700px) and (max-width: 995px) {
+
+    .secao-informacoesSobre {
+        height: 100vh;
+    }
+
+    .bloco-titulo-informacoesSobre {
+        width: 80vw;
+    }
+
+    .bloco-image-informacoes img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .lista-informacoesSobre li {
+        font-size: 16px;
+    }
+
+    .texto-anuncio,
+    .bloco-titulo-informacoesSobre h2,
+    .bloco-titulo-cards-aulas h2,
+    .bloco-titulo-exercicios h2 {
+        font-size: 30px;
+    }
+
+
+    .secao-cards-aulas {
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    .cards-aulas {
+        flex-direction: column;
+        width: 20rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+    }
+
+    .secao-exercicios {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 699px) {
+    .secao-informacoesSobre {
+        height: 100vh;
+    }
+
+    .texto-anuncio,
+    .bloco-titulo-informacoesSobre h2,
+    .bloco-titulo-cards-aulas h2,
+    .bloco-titulo-exercicios h2 {
+        font-size: 30px;
+    }
+
+    .bloco-titulo-informacoesSobre {
+        bottom: 8rem;
+        width: 80vw;
+    }
+
+    .bloco-image-informacoes img {
+        display: none;
+    }
+
+    .lista-informacoesSobre li {
+        font-size: 16px;
+    }
+
+
+    .secao-cards-aulas {
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    .cards-aulas {
+        flex-direction: column;
+        width: 30rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+    }
+
+    .secao-exercicios {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 600px) {
     #btn-mobile {
         display: block;
     }
@@ -296,5 +375,245 @@ footer a {
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
 
+    }
+
+    .secao-informacoesSobre {
+        height: 100vh;
+    }
+
+    .texto-anuncio {
+        width: 70%;
+        font-size: 26px;
+    }
+
+    .bloco-titulo-informacoesSobre h2,
+    .bloco-titulo-cards-aulas h2,
+    .bloco-titulo-exercicios h2 {
+        font-size: 26px;
+    }
+
+    .bloco-titulo-informacoesSobre {
+        bottom: 8rem;
+        width: 80vw;
+    }
+
+    .bloco-image-informacoes img {
+        display: none;
+    }
+
+    .bloco-informacoesSobre {
+        width: 80vw;
+    }
+
+    .lista-informacoesSobre li {
+        font-size: 16px;
+    }
+
+
+    .secao-cards-aulas {
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    .cards-aulas {
+        flex-direction: column;
+        width: 30rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+    }
+
+    .cards-aulas p {
+        font-size: 18px;
+    }
+
+    .secao-exercicios {
+        height: 60vh;
+    }
+}
+
+@media (min-width:400px) and (max-width: 529px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 4rem;
+        right: 0rem;
+        background-color: #0F1D41;
+        z-index: 1000;
+        transition: .6s;
+        overflow-y: auto;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 4rem);
+    }
+
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+    }
+
+    .secao-informacoesSobre {
+        height: 90vh;
+    }
+
+    .texto-anuncio {
+        width: 70%;
+        font-size: 26px;
+    }
+
+    .bloco-titulo-informacoesSobre h2,
+    .bloco-titulo-cards-aulas h2,
+    .bloco-titulo-exercicios h2 {
+        font-size: 26px;
+    }
+
+    .bloco-titulo-informacoesSobre {
+        bottom: 8rem;
+        width: 80vw;
+    }
+
+
+    .bloco-image-informacoes img {
+        display: none;
+    }
+
+    .bloco-informacoesSobre {
+        width: 80vw;
+    }
+
+    .lista-informacoesSobre li {
+        font-size: 16px;
+    }
+
+
+    .secao-cards-aulas {
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    .cards-aulas {
+        flex-direction: column;
+        width: 22rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+    }
+
+    .cards-aulas p {
+        font-size: 18px;
+    }
+
+    .secao-exercicios {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 399px) {
+
+    #logo {
+        width: 50px;
+        height: 45px;
+        position: relative;
+        right: 2rem;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 4rem;
+        right: 0rem;
+        background-color: #0F1D41;
+        z-index: 1000;
+        transition: .6s;
+        overflow-y: auto;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 4rem);
+    }
+
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+    }
+
+    .secao-informacoesSobre {
+        height: 90vh;
+    }
+
+    .texto-anuncio {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .texto-adicional {
+        font-size: 12px;
+    }
+
+    .bloco-titulo-informacoesSobre h2,
+    .bloco-titulo-cards-aulas h2,
+    .bloco-titulo-exercicios h2 {
+        font-size: 24px;
+    }
+
+    .bloco-titulo-informacoesSobre {
+        bottom: 8rem;
+        width: 80vw;
+    }
+
+
+    .bloco-image-informacoes img {
+        display: none;
+    }
+
+    .bloco-informacoesSobre {
+        width: 80vw;
+    }
+
+    .lista-informacoesSobre li {
+        font-size: 16px;
+    }
+
+
+    .secao-cards-aulas {
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    .cards-aulas {
+        flex-direction: column;
+        width: 22rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+    }
+
+    .cards-aulas p {
+        font-size: 18px;
+    }
+
+    .secao-exercicios {
+        height: 60vh;
     }
 }
