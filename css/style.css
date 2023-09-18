@@ -36,9 +36,12 @@ transition: .2s;
 }
 
 #btn-mobile {
+    cursor: pointer;
     border: none;
     background-color: #0F1D41;
 }
+
+
 
 .hamburguer {
     width: 2rem;
@@ -378,6 +381,10 @@ footer a {
         overflow-y: auto;
     }
 
+.link-menu {
+    padding: 1rem;
+}
+
     #nav.active #menu {
         visibility: visible;
         height: calc(100vh - 4rem);
@@ -466,6 +473,10 @@ footer a {
         z-index: 1000;
         transition: .6s;
         overflow-y: auto;
+    }
+
+    .link-menu {
+        padding: 1rem;
     }
 
     #menu li:hover {
@@ -565,6 +576,10 @@ footer a {
         z-index: 1000;
         transition: .6s;
         overflow-y: auto;
+    }
+
+    .link-menu {
+        padding: 1rem;
     }
 
     #menu li:hover {

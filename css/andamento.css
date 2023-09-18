@@ -22,6 +22,43 @@ main p {
     font-weight: 600;
 }
 
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 4rem;
+        right: 0rem;
+        background-color: #0F1D41;
+        z-index: 1000;
+        transition: .6s;
+        overflow-y: auto;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 4rem);
+    }
+
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+    }
+
+    #menu li:hover {
+        background-color: #1e397e;
+    }
+
+}
+
 @media (max-width: 430px) {
 
     main {
