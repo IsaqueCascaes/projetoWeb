@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/emdesenvolvimento.gif');
+    background-size: cover;
+}
+
+main p {
+    width: 70%;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 430px) {
+
+    main {
+        background-size: cover;
+        background-position: center;
+    }
+
+    main p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:320px) {
+    main {
+        background-size: cover;
+        background-position: center;
+    }
+
+    main p {
+        width: 100%;
+        font-size: 22px;
+    }
+}

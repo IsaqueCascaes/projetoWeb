@@ -7,7 +7,14 @@
 
 .link-menu {
     text-decoration: none;
-    color: white;
+    color: #fff;
+    transition: .2s;
+    background-color: none;
+}
+
+.link-menu:hover {
+color: #c2bfbf;
+transition: .2s;
 }
 
 #logo {
@@ -44,9 +51,6 @@
     gap: 2rem;
 }
 
-#menu li:hover {
-    background-color: #214190;
-}
 
 #btn-mobile {
     display: none;
@@ -58,7 +62,7 @@ main {
     align-items: star;
     justify-content: center;
     height: 96vh;
-    background: rgba(0, 0, 0, 0.6) url('/img/fundo-main.jpg');
+    background: rgba(0, 0, 0, 0.5) url('/img/fundo-main.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -239,6 +243,15 @@ footer p {
     list-style: none;
 }
 
+.bloco-redes li img {
+    transition: .2s;
+}
+
+.bloco-redes  li img:hover {
+    transition: .2s;
+    filter: brightness(50%);
+}
+
 .consideracoes-finais {
     padding-top: 1rem;
     font-size: 10px;
@@ -377,6 +390,10 @@ footer a {
 
     }
 
+    #menu li:hover {
+        background-color: #1e397e;
+    }
+
     .secao-informacoesSobre {
         height: 100vh;
     }
@@ -449,6 +466,10 @@ footer a {
         z-index: 1000;
         transition: .6s;
         overflow-y: auto;
+    }
+
+    #menu li:hover {
+        background-color: #1e397e;
     }
 
     #nav.active #menu {
@@ -544,6 +565,10 @@ footer a {
         z-index: 1000;
         transition: .6s;
         overflow-y: auto;
+    }
+
+    #menu li:hover {
+        background-color: #1e397e;
     }
 
     #nav.active #menu {
